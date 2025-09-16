@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(83, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.myIntro p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navItems ul {
+    display: flex;
+    list-style: none;
+}
+
+.navItems ul li {
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+li:hover {
+    color: aqua;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h1{
+    color:  #d2691e;
+    font-weight: 800;
+}
+#intro{
+    color: grey;
+    margin-top: 30px;
+}
+
+.main{
+    text-align: center;
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:30px;
+    padding:10px;
+    margin-top: 50px;
+
+}
+
+.box{
+    background-color: #d2691e;
+    text-align: center;
+    height: 300px;
+
+}
+
+#image1{
+         background-image: url(bed1.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+
+
+#image2{
+         background-image: url(bed2.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+
+#image3{
+         background-image: url(bed3.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+
+#image4{
+         background-image: url(bed4.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+
+#image5{
+         background-image: url(bed5.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+
+#image6{
+         background-image: url(bed6.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+
+#image7{
+         background-image: url(bed7.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+
+#image8{
+         background-image: url(bed8.jpg);
+         background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+
+}
+#footer{
+    background-color: rgb(83, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 150px;
+}
+
+#footer p{
+    color: grey;
+}
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 550px) {
+       
+    h1{
+    color:  #d2691e;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#intro{
+    color: grey;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.box{
+    background-color: #d2691e;
+    text-align: center;
+    height: 150px;
+
+
+
+}
+
+}

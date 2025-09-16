@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(83, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.myIntro p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navItems ul {
+    display: flex;
+    list-style: none;
+}
+
+.navItems ul li {
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+li:hover {
+    color: aqua;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mainContent {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+   
+
+
+}
+
+#mainImage {
+    width: 100%;
+    height: 450px;
+    background-image: url(heropic.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#mainImage h1 {
+    color: rgb(114, 20, 20);
+
+    font-weight: 650;
+    font-family: fantasy;
+    font-size: 50px;
+    padding-top: 30px;
+    display: block;
+
+}
+
+.cards {
+    height: auto;
+    width: 100%;
+
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%;
+    place-items: center;
+
+
+}
+
+.cardLayout {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(216, 212, 212);
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.cardLayout .image {
+    width: 100%;
+    height: 75%;
+    background-color: black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#imageOne {
+    background-image: url("sofa.jpg");
+}
+
+#imageTwo {
+    background-image: url("bed.jpg");
+}
+
+#imageThree {
+    background-image: url("dining.jpg");
+}
+
+.cardLayout .btns {
+
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+
+
+}
+
+.viewbtn {
+    width: 60%;
+    background-color: blue;
+    height: 30px;
+    border: none;
+    border-radius: 40px;
+    font-size: larger;
+
+}
+
+.buybtn {
+    width: 40%;
+    color: blue;
+    height: 30px;
+    border: none;
+    border-radius: 40px;
+    font-size: larger;
+}
+
+.viewbtn:hover{
+    background-color:rgb(7, 7, 163);
+}
+
+.buybtn:hover{
+    background-color:rgb(236, 234, 234);
+}
+
+#footer {
+    background-color: rgb(83, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 150px;
+}
+
+#footer p {
+    color: grey;
+}
+
+
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 50px;
+    color: black;
+    flex-direction: column;
+}
+
+.headingContact{
+    background-color: white;
+    color:#d2691e;
+    font-size: 50px;
+    font-style:italic;
+}
+
+.contentContact{
+    color: rgb(186, 181, 181);
+    font-size: 25px;
+}
+
+.contactButton{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size:15px ;
+    border-radius: 20%;
+    
+   
+}
+.button2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin-top: 30px;
+}
+
+
+/* Responsive Fixes */
+@media screen and (max-width: 550px) {
+
+    .navItems {
+        display: none;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navItems ul {
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .navItems ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navItems.show {
+        display: block;
+    }
+
+    .mainContent {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
+    }
+
+    #mainImage {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+    }
+
+    #mainImage h1 {
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;  /* 👈 This makes it 1 card per row */
+        row-gap: 20px;
+        column-gap: 0;
+    }
+
+    .cardLayout {
+        height: auto;
+        padding: 10px;
+    }
+
+    .cardLayout .image {
+        height: 200px;
+    }
+
+    .cardLayout .btns {
+        flex-direction: column; /* 👈 Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .viewbtn,
+    .buybtn {
+        width: 90%;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj Furniture House</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Nav Bar -->
+        <nav class="navbar">
+            <div class="myIntro">
+                <p>Pankaj Furniture</p>
+            </div>
+
+            <div id="hamburger2" class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <div class="navItems" id="navItems">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section with Text on Image -->
+        <div class="mainContent">
+            <div id="mainImage">
+                <div id="infoOnImage">
+                    <h1 id="infoo">Welcom To Pankaj Furniture House</h1>
+                </div>
+
+            </div>
+
+            <!--  AllCards -->
+            <div class="cards">
+
+                <!-- First Card -->
+                <div class="cardLayout">
+
+                    <div id="imageOne" class="image"></div>
+                    <div class="btns">
+                        <button onclick="window.location.href='sofa.html'" class="viewbtn">View</button>
+                        <button class="buybtn"><a href="tel:+917535838327" style="color:blue; display:block;">
+                                Buy</a></button>
+                    </div>
+                </div>
+
+                <!-- second card -->
+
+                <div class="cardLayout">
+
+                    <div id="imageTwo" class="image"></div>
+                    <div class="btns">
+
+                        <button onclick="window.location.href='bed.html'" class="viewbtn"
+                            class="viewbtn">View</button>
+                        <button class="buybtn"><a href="tel:+917535838327" style="color:blue; display:block;">
+                                Buy</a></button>
+                    </div>
+                </div>
+
+
+
+                <!-- third card -->
+
+                <div class="cardLayout">
+
+                    <div id="imageThree" class="image"></div>
+                    <div class="btns">
+
+                        <button onclick="window.location.href='dining.html'" class="viewbtn"
+                            class="viewbtn">View</button>
+                        <button class="buybtn"><a href="tel:+917535838327" style="color:blue; display:block;">
+                                Buy</a></button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="contact">
+                <div class="headingContact"> Welcome</div>
+                <div class="contentContact">
+                    <h1 class="contentContact">Welcome to Pankaj Furniture House!</h1>
+                    Discover the best quality furniture at our store. From stylish beds, cozy sofas, and elegant dining
+                    tables — we offer a wide variety of premium products to suit your home. We also bring exciting
+                    offers from time to time, making your shopping experience even better.
+                    <h1 class="contentContact">✨ Click below to contact with us!</h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="button2"><a href="tel:+917535838327"><button class="contactButton"> Contact</button></a></div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p> 2025 Pankaj Furniture House Copyright </p>
+
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navItems").classList.toggle("show");
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
